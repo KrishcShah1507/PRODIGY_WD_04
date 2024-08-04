@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Stormclouds.jpg/250px-Stormclouds.jpg'); /* Ensure this image is high quality */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: linear-gradient(to bottom right, rgba(136, 39, 39, 0.9), rgba(240, 240, 240, 0.9));
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+}
+
+form input[type="text"] {
+    padding: 12px;
+    font-size: 18px;
+    width: 70%;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+form input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+form input[type="text"]:focus {
+    background-color: #f0f8ff;
+    border-color: #00c3ff;
+}
+
+form input[type="submit"] {
+    padding: 12px 24px;
+    border: none;
+    background-color: #00c3ff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0099cc;
+    transform: scale(1.05);
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.temp {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 10px;
+}
+
+.desc {
+    font-size: 24px;
+    font-weight: 500;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details > div {
+    font-size: 18px;
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    min-height: 40px;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
